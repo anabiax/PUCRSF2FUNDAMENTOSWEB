@@ -3,7 +3,7 @@
 import { Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import img from '../../components/img/img.jpg';  // importando a imagem p/ ser chamada como variável lá embaixo
+import img from '../../components/img/imza.jpg';  // importando a imagem p/ ser chamada como variável lá embaixo
 
 
 export default function Home(){
@@ -11,7 +11,7 @@ export default function Home(){
         <>
             <header className="header-menu">
                 <div className='title'>
-                    <h1>Soluti<span className='title2'>ON</span></h1>
+                    <h2><span className='title2'>Pet</span>shop</h2>
                 </div>
 
                 <Grid xs={12} className="nav">
@@ -42,23 +42,21 @@ export default function Home(){
 
                     </ul>
                 </Grid>
-
             </header>
 
             {/* página principal  */}
             <Grid xs= {12} className="main" >
 
                 {/* metade da tela p/ o texto */}
-                <aside>
-                    <h2>Soluti<span>ON</span></h2>
-                    <h3 className="text-gradient">Soluções empresariais</h3>
-                    <p>Promovendo conexões resilientes e agregando valor aos potenciais negócios.</p>
+                <aside className="link-wrapper">
+                    <h3 className="text-gradient">Cuidado e carinho para o seu <br/> melhor amigo, sempre!</h3>
+                    <p>Banho, tosa, saúde e diversão: tudo o que seu pet precisa em um só lugar!</p>
 
-                    <Link to='/servicos'>
+                    <Link to='/servicos' className="enviar-link">
                         <input type="submit" value="Visualizar serviços" className="enviar" />
                     </Link>
 
-                    <Link to='/produtos'>
+                    <Link to='/produtos' className="enviar-link">
                         <input type="submit" value="Visualizar produtos" className="enviar" />
                     </Link>
 
@@ -67,7 +65,7 @@ export default function Home(){
                 <article>
                     <img 
                         src={img} 
-                        alt="cachorro bege à esquerda e gato cinza à direita" 
+                        alt="Cachorro branco sorrindo em um fundo de cor roxa" 
                     />
                 </article>
             </Grid>        
