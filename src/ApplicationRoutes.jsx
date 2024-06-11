@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import Header from '../pages/Header/Header';
+
 import Home from '../pages/Home/Home';
 import Servicos from '../pages/Servicos/Servicos';
 import Produtos from '../pages/Produtos/Produtos';
@@ -29,6 +31,7 @@ import CompraSucesso from '../pages/Pagamento/CompraSucesso/CompraSucesso';
 export default function ApplicationRoutes (){
     return(
         <BrowserRouter>
+            <Header />
                 <Routes>
 
                     <Route path="/" element={ <Home/> } />
@@ -57,6 +60,6 @@ export default function ApplicationRoutes (){
                     <Route path="/compraNegada" element={ <CompraNegada/> }/>
 
                 </Routes>
-        </ BrowserRouter >
+        </BrowserRouter >
     )
 }
