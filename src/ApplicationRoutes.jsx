@@ -10,7 +10,7 @@ import Contato from '../pages/Contato/Contato';
 import CadastroUsuario from '../pages/Cadastro/CadastroUsuario/CadastroUsuario';
 import CadastroPet from '../pages/Cadastro/CadastroPet/CadastroPet';
 import Conta from '../pages/Cadastro/Conta/Conta';
-import TelaCadastro from '../pages/Cadastro/TelaCadastro/TelaCadastro';
+import TelaCadastro from '../pages/Cadastro/TelaCadastro/TelaCadastro';   /// da onde to tirando esse?
 
 import DadosUsuario from '../pages/Cadastro/DadosUsuario/DadosUsuario';
 import Historico from '../pages/Cadastro/Historico/Historico';
@@ -39,8 +39,10 @@ export default function ApplicationRoutes (){
                     <Route path="/produtos" element={ <Produtos/> } />
                     <Route path="/contatos" element={ <Contato/> } />
 
-                    <Route path="/cadastro" element={ <TelaCadastro/> } />
+                    <Route path="/cadastro" element={ <CadastroUsuario/> } />
+
                     <Route path="/cadastroUsuario" element={ <CadastroUsuario/> } />
+
                     <Route path="/minhaConta" element={ <Conta/> } />
                     <Route path="/cadastroPet" element={ <CadastroPet/> } />
 

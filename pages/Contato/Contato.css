@@ -52,3 +52,10 @@ h1 {
     border-top: 1px solid #ccc;
     margin: 20px 0;
 }
+
+.content img {
+    float: left; /* Or use display: inline-block */
+    margin-right: 20px; /* Add spacing between image and text */
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}

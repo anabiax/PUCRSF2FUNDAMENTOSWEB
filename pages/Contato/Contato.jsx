@@ -1,4 +1,5 @@
 import './Contato.css';
+//import img from '../../components/img/acessorios.jpg';  // importando a imagem p/ ser chamada como variável lá embaixo
 
 
 export default function Contato() {
@@ -25,6 +26,7 @@ export default function Contato() {
 
                         <h3>Horário de atendimento</h3>
                         <p>9h - 18h de segunda à sexta-feira</p>
+
 
                     </div>
                 </div>
