@@ -1,9 +1,9 @@
-import ApplicationRoutes from './ApplicationRoutes'; 
+import RotasAplicacao from './RotasAplicacao'; 
 import './App.css';
 
 
 export default function App() {
   return (
-    <ApplicationRoutes />
+    <RotasAplicacao />
   )
 }

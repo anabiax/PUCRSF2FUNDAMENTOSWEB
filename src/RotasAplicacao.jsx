@@ -30,7 +30,7 @@ import Footer from '../pages/Footer/Footer';
 // Header e Footer foram estabelecidos como elementos estaticos para que possam ser acessados em qqr caminho 
 // em path sao definidas as urls + o componente a ser exibido contendo as informacoes concernentes 
 
-export default function ApplicationRoutes (){
+export default function RotasAplicacao (){
     return(
         <BrowserRouter>
             <Header />  
