@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.imagem-servico {
+    width: 450px; 
+    height: 500px; 
+    margin-right: 50px;
+    
+}
+
+.info-servico {
+    flex: 1;
+    font-size: 20px;
+}
+
+.servico h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.servico p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.botao-servicos {
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+    background-color: #022534;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%; 
+}

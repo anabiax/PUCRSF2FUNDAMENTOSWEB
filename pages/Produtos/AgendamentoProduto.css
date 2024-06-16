@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imagem-produto {
+    width: 450px; 
+    height: 500px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.info-produto {
+    flex: 1; 
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.botao-produtos {
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+    background-color: #022534;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
