@@ -26,7 +26,7 @@ export default function Servicos() {
         <>
            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '250px',  }}>
             {servicos.map((servico) => (
-                <Link to="/agendamentoServico" key={servico.id} style={{ margin: '10px 20px', width: '300px', border: '1px solid #ccc', borderRadius: '5px', padding: '10px', textAlign: 'center' }}>
+                <Link to="/agendamentoServico" key={servico.id} style={{ textDecoration: 'none', color: 'inherit', margin: '10px 20px', width: '300px', border: '1px solid #ccc', borderRadius: '5px', padding: '10px', textAlign: 'center', display: 'inline-block' }}>
                     <img src={servico.image} alt={servico.title} style={{ width: '100%', borderRadius: '5px' }} />
                     <h3>{servico.title}</h3>
                     <p>{servico.description}</p>
