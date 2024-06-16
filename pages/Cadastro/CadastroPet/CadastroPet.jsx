@@ -18,6 +18,8 @@ export default function CadastroPet() {
         navigate('/minhaConta');  // rota p/ redirecionar a outra pagina          
     };
 
+    // importando itens do material-ui para facilitar a manipulacao dos componentes a partir de elementos pré-prontos
+
     return (
         <>
             <Grid container className="container body">
