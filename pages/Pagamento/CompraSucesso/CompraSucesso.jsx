@@ -1,5 +1,5 @@
 import { Grid, Typography, Box } from '@mui/material';
-import { CheckCircleOutline } from '@material-ui/icons';
+//import { CheckCircleOutline } from '@material-ui/icons';
 
 
 export default function CompraSucesso() {
@@ -8,7 +8,6 @@ export default function CompraSucesso() {
             <Grid item xs={12} md={8} className="success-message">
 
                 <Box textAlign="center" padding={5}>
-                    <CheckCircleOutline style={{ color: '#00e676', fontSize: 80 }} />
 
                     <Typography variant="h4" component="h2" gutterBottom>
                         Compra efetuada com sucesso!
