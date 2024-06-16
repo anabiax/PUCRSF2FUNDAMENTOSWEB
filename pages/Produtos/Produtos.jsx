@@ -4,6 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { Link } from 'react-router-dom';
 
 
+// array de objetos contendo as informacoes dos produtos p/ que sejam mapeados no return
 const produtos = [
     {
         id: 1,
@@ -204,32 +205,32 @@ export default function Produtos() {
                 </Carousel>
             </div>
 
-        <div className="produtos-container">
-            <Carousel
-                responsive={responsive}
-                infinite={true}
-                showDots={true}
-                autoPlay={true}
-                autoPlaySpeed={3000}
-                keyBoardControl={true}
-                customTransition="all 0.8s"
-                transitionDuration={800}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                itemClass="carousel-item-padding-40-px"
-            >
-                {produtos.map(produto => (
-                    <Link to="/agendamentoProduto" key={produto.id} className="produto-card">
-                        <img src={produto.image} alt={produto.title} className="produto-image" />
-                        <div className="produto-details">
-                            <h3 className="produto-title">{produto.title}</h3>
-                            <p className="produto-description">{produto.description}</p>
-                            <p className="produto-price">{produto.price}</p>
-                        </div>
-                    </Link>
-                ))}
-            </Carousel>
-        </div>
+            <div className="produtos-container">
+                <Carousel
+                    responsive={responsive}
+                    infinite={true}
+                    showDots={true}
+                    autoPlay={true}
+                    autoPlaySpeed={3000}
+                    keyBoardControl={true}
+                    customTransition="all 0.8s"
+                    transitionDuration={800}
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    itemClass="carousel-item-padding-40-px"
+                >
+                    {produtos.map(produto => (
+                        <Link to="/agendamentoProduto" key={produto.id} className="produto-card">
+                            <img src={produto.image} alt={produto.title} className="produto-image" />
+                            <div className="produto-details">
+                                <h3 className="produto-title">{produto.title}</h3>
+                                <p className="produto-description">{produto.description}</p>
+                                <p className="produto-price">{produto.price}</p>
+                            </div>
+                        </Link>
+                    ))}
+                </Carousel>
+            </div>
         </>
     );
 }

@@ -1,13 +1,10 @@
 import './Contato.css';
-//import img from '../../components/img/acessorios.jpg';  // importando a imagem p/ ser chamada como variável lá embaixo
-
 
 export default function Contato() {
  
     return (
         <>
             <div >
-
                 <div className="header">
                     <h1>Contatos</h1>
                 </div>
@@ -30,7 +27,6 @@ export default function Contato() {
 
                     </div>
                 </div>
-
             </div>
         </>
     )

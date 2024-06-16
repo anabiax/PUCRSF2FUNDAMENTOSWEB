@@ -24,7 +24,6 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
 }
 
 .content {
@@ -36,7 +35,6 @@ h1 {
 }
 
 .content h3 {
-    margin: 10px 0;
     font-weight: bold;
     font-size: 30px;
 }
@@ -54,8 +52,8 @@ h1 {
 }
 
 .content img {
-    float: left; /* Or use display: inline-block */
-    margin-right: 20px; /* Add spacing between image and text */
-    width: 150px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
+    float: left; 
+    margin-right: 20px; 
+    width: 150px; 
+    height: auto; 
 }

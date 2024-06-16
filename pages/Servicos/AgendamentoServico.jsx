@@ -1,13 +1,13 @@
 import './AgendamentoServico.css';
-//import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function AgendamentoServico() {
-    //const history = useHistory();
+    const navigate = useNavigate();
 
-    /*const handleAgendarServico = () => {
-        history.push('/');
-    };*/
+    const handleButtonClick = () => {
+        navigate('/pagamento'); 
+    };
 
     return (
         <>
@@ -45,7 +45,7 @@ export default function AgendamentoServico() {
                             <br></br>
                         </div>
 
-                        <button className="botao-servicos">Agendar Serviço</button>
+                        <button className="botao-servicos" onClick={handleButtonClick}>Agendar Serviço</button>
                     </div>
                 </div>
             </div>

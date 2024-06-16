@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+// importacao dos componentes
 import Header from '../pages/Header/Header';
 
 import Home from '../pages/Home/Home';
@@ -9,8 +10,6 @@ import Contato from '../pages/Contato/Contato';
 
 import CadastroUsuario from '../pages/Cadastro/CadastroUsuario/CadastroUsuario';
 import CadastroPet from '../pages/Cadastro/CadastroPet/CadastroPet';
-import Conta from '../pages/Cadastro/Conta/Conta';
-import TelaCadastro from '../pages/Cadastro/TelaCadastro/TelaCadastro';   /// da onde to tirando esse?
 
 import DadosUsuario from '../pages/Cadastro/DadosUsuario/DadosUsuario';
 import Historico from '../pages/Cadastro/Historico/Historico';
@@ -26,12 +25,15 @@ import Pagamento from '../pages/Pagamento/Pagamento';
 import CompraNegada from '../pages/Pagamento/CompraNegada/CompraNegada';
 import CompraSucesso from '../pages/Pagamento/CompraSucesso/CompraSucesso';
 
+import Footer from '../pages/Footer/Footer';
 
+// Header e Footer foram estabelecidos como elementos estaticos para que possam ser acessados em qqr caminho 
+// em path sao definidas as urls + o componente a ser exibido contendo as informacoes concernentes 
 
 export default function ApplicationRoutes (){
     return(
         <BrowserRouter>
-            <Header />
+            <Header />  
                 <Routes>
 
                     <Route path="/" element={ <Home/> } />
@@ -41,13 +43,10 @@ export default function ApplicationRoutes (){
 
                     <Route path="/cadastro" element={ <CadastroUsuario/> } />
 
-                    <Route path="/cadastroUsuario" element={ <CadastroUsuario/> } />
-
-                    <Route path="/minhaConta" element={ <Conta/> } />
+                    <Route path="/minhaConta" element={ <DadosUsuario/> } />
                     <Route path="/cadastroPet" element={ <CadastroPet/> } />
 
                     <Route path="/login" element={ <Login/> }/>
-                    <Route path="/dadosUsuario" element={ <DadosUsuario/> } />
                     <Route path="/historico" element={ <Historico/> } />
 
                     <Route path="/servico" element={ <Servico/> } />
@@ -60,8 +59,8 @@ export default function ApplicationRoutes (){
 
                     <Route path="/compraSucesso" element={ <CompraSucesso/> } />
                     <Route path="/compraNegada" element={ <CompraNegada/> }/>
-
                 </Routes>
+            <Footer />
         </BrowserRouter >
     )
 }
