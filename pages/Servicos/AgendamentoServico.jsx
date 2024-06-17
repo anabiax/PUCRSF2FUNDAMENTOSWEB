@@ -13,7 +13,7 @@ export default function AgendamentoServico() {
         <>
             <div className="container">
                 <div className="servico">
-                    <img src="https://sintemais.com.br/wp-content/uploads/2017/05/L-_martelado_cinza_escuro_1-2_C07_com_malha.jpg" alt="Nome do Serviço" className="imagem-servico" />
+                    <img src="https://sintemais.com.br/wp-content/uploads/2017/05/L-_martelado_cinza_escuro_1-2_C07_com_malha.jpg" alt="Servico" className="imagem-servico" />
                     <div className="info-servico">
                         <h2>Nome do Serviço</h2>
                         <p>Descrição do Serviço</p>

@@ -171,6 +171,7 @@ const responsive = {
     }
 };
 
+// {} atribuindo os valores dinamicamente via js, como na tag src e alt
 
 export default function Produtos() {
     return (

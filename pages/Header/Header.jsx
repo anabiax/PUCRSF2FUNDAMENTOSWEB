@@ -3,7 +3,8 @@ import { Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-
+// conceito de SPA - aplicativo web que carrega apenas uma unica pagina HTML e atualiza o conteudo dinamicamente usando JavaScript
+//oferecendo assim uma experiencia fluida sem a necessidade de recarregar toda a pagina
 export default function Header(){
     return(
         <>

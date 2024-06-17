@@ -12,7 +12,6 @@ import CadastroUsuario from '../pages/Cadastro/CadastroUsuario/CadastroUsuario';
 import CadastroPet from '../pages/Cadastro/CadastroPet/CadastroPet';
 
 import DadosUsuario from '../pages/Cadastro/DadosUsuario/DadosUsuario';
-import Historico from '../pages/Cadastro/Historico/Historico';
 import Login from '../pages/Cadastro/Login/Login';
 
 import Servico from '../pages/Servicos/Servico/Servico';
@@ -47,7 +46,6 @@ export default function RotasAplicacao (){
                     <Route path="/cadastroPet" element={ <CadastroPet/> } />
 
                     <Route path="/login" element={ <Login/> }/>
-                    <Route path="/historico" element={ <Historico/> } />
 
                     <Route path="/servico" element={ <Servico/> } />
                     <Route path="/agendamentoServico" element={ <AgendamentoServico/> } />

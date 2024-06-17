@@ -12,7 +12,6 @@ export default function Home(){
             {/* página principal  */}
             <Grid xs= {12} className="main" >
 
-                {/* metade da tela p/ o texto */}
                 <aside className="link-wrapper">
                     <h3 className="text-gradient">Cuidado e carinho para o seu <br/> melhor amigo, sempre!</h3>
                     <p>Banho, tosa, saúde e diversão: tudo o que seu pet precisa em um só lugar!</p>
